@@ -12,7 +12,7 @@ int function(int n1) {
 }
 int recurs(int n2) { 
     int a, b = 0;
-    a = 2 + 1;//a1
+    a = 2 + 1;
     for (int k = 2; k <= n2; k++) {
         b = a;
         a = 2 * b + function(k);
@@ -25,7 +25,7 @@ int main() {
     SetConsoleOutputCP(1251);
     SetConsoleCP(1251);
     int n2;
-    cout << "Ââåä³òü ÷èñëî " << endl;
+    cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Ã·Ã¨Ã±Ã«Ã® " << endl;
     cin >> n2;
     recurs(n2);
     return 0;
