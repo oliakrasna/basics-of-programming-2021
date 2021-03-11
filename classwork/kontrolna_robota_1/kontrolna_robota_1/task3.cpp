@@ -15,7 +15,7 @@ int recurs(int n2) {
     a = 2 + 1;
     for (int k = 2; k <= n2; k++) {
         b = a;
-        a = 2 * b + function(k);
+        a = 2 * b + function(pow(k, 2));
     }
     cout << a;
     return 0;
