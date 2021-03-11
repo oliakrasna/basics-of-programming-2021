@@ -25,7 +25,7 @@ int main() {
     SetConsoleOutputCP(1251);
     SetConsoleCP(1251);
     int n2;
-    cout << "Ââåä³òü ÷èñëî " << endl;
+    cout << "Enter number" << endl;
     cin >> n2;
     recurs(n2);
     return 0;
