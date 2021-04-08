@@ -1,35 +1,27 @@
-/*#include <iostream>
-#include<stdio.h>
-#include<windows.h>
-#include <cstdlib> 
+#include <iostream>
 using namespace std;
-int function(int n1) {
-    int f= 1;
-    for (int k= 1; k <= n1; k++) {
-        f *= k;
-    }
-    return f;
+int factorial(int n) {
+	if (n == 0) return 1;
+	else return n *= factorial(n - 1);
 }
-int recurs(int n2) { 
-    int a, b = 0;
-    a = 2 + 1;//a1
-    for (int k = 2; k <= n2; k++) {
-        b = a;
-        a = 2 * b + function(k);
-    }
-    cout << a;
-    return 0;
+int main()
+{
+	setlocale(LC_ALL, "Russian");
+	int size;
+	cout << "¬ведiть к-сть N доданкiв" << endl;
+	cin >> size;
+	int result = 1;
+	int current_num = 1;
+	int next_num;
+	for (int i = 1; i < size; i++)
+	{
+		next_num = 2 * current_num + factorial(i);
+		current_num = next_num;
+		result += next_num;
+	}
+	cout << result;
 }
 
-int main() {
-    SetConsoleOutputCP(1251);
-    SetConsoleCP(1251);
-    int n2;
-    cout << "¬вед≥ть число " << endl;
-    cin >> n2;
-    recurs(n2);
-    return 0;
-}*/
 
 /*INPUT: 7
 OUTPUT: 7504*/
