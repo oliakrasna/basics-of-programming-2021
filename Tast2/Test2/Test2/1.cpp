@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 using namespace std;
 
 int* input(int n) {
@@ -35,4 +35,4 @@ int main()
     print(arr, n);
     AboveAvg(arr, n);
     return 0;
-}*/
+}
