@@ -1,0 +1,5 @@
+X: 1  Y: 1  Z: 0  0Level of black:   1
+X: 2  Y: 1  Z: 3  3Level of black:   4
+X: 1  Y: 5  Z: 0  0Level of black:   1
+X: 2  Y: 9  Z: 7  7Level of black:   3
+X: 0  Y: 2  Z: 1  1Level of black:   1
